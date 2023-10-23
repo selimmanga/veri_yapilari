@@ -49,6 +49,7 @@ print(sonuc)
 
 # Sınıf: Ortak özelliklere sahip varlıkların bir arada olduğu gruplara denir.
 # self: kendine ait olduğunu belirten bir anahtar kelimedir
+# Nesne: Bir sınıfa ait özellikleri taşıyan ve bu sınıftan türetilen varlık
 
 class Cat:
     ayak_sayisi = 4
