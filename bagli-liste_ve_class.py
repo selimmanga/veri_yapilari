@@ -47,7 +47,7 @@ print(sonuc)
 
 ### Sınıf ve Nesne ###
 
-# Sınıf: kendine has özellikleri olan varlıkları tanımlarken kullanılır
+# Sınıf: Ortak özelliklere sahip varlıkların bir arada olduğu gruplara denir.
 # self: kendine ait olduğunu belirten bir anahtar kelimedir
 
 class Cat:
