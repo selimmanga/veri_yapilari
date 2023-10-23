@@ -87,7 +87,7 @@ class Bagli_Liste:
           silinen = self.bastan_sil(self)
       return silinen
           
-"""Bu metodu kullanmamızın amacı listenin bellekteki adresi yerine girilen değeri yazdırmak, 
+"""def __str__(self): Bu metodu kullanmamızın amacı listenin bellekteki adresi yerine girilen değeri yazdırmak, 
 eğer bu olmazsa bellekteki adresini çıktı olarak alırız"""   
       
 """Renk listesi oluşturalım"""
