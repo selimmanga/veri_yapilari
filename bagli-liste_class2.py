@@ -86,7 +86,24 @@ class Bagli_Liste:
       else:
           silinen = self.bastan_sil(self)
       return silinen
+  
+  def indekse_ekle(self, idx, deger):
+      if idx == 0:
+          self.basa_ekle(deger)
+      else:
+          pos = 0
+          mevcut_dugum = self.bas
+          while pos + 1 != idx and mevcut_dugum != None:
+              mevcut_dugum = mevcut_dugum.link 
+              pos += 1
           
+          if mevcut_dugum != None:
+              yeni_dugum = Dugum_Olustur(deger, None)
+              yeni_dugum.link = mevcut_dugum.link 
+              mevcut_dugum.link = yeni_dugum
+          else:
+              print(idx, " no'lu index bulunamadı.")
+    
 """def __str__(self): Bu metodu kullanmamızın amacı listenin bellekteki adresi yerine girilen değeri yazdırmak, 
 eğer bu olmazsa bellekteki adresini çıktı olarak alırız"""   
       
@@ -126,5 +143,14 @@ renk2 = renkler.sondan_sil()
 print(renk2) # Sildiğimiz rengin adresi
 print(renk2.deger) # Sildiğimiz rengin değeri
 
+print(" ")
+print(" ")
+print(" ")
 
-
+sayilar = Bagli_Liste()
+sayilar.basa_ekle(4)
+sayilar.basa_ekle(8)
+sayilar.basa_ekle(9)
+sayilar.basa_ekle(True)
+sayilar.indekse_ekle(324, 31) # Hatalı değer için yazıldı
+print(sayilar)
