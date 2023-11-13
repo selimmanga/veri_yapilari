@@ -125,6 +125,10 @@ class Dugum_Olustur:
 
 class Bagli_Liste:
   bas = None
+
+  def __init__(self):
+     pass
+
   def basa_ekle(self, deger):
 
     if self.bas == None: # baştaki değer boş ise olacaklar
